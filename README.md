@@ -12,14 +12,22 @@ BLiNK escape sequences
 Color Table
 ------------
 
---------------------------------------
-| 0 | Black (off) |   |              |
-| 1 | Dark red    | 8 | Light red    |
-| 2 | Dark orange | 9 | Light orange |
-| 3 | Dark yellow | A | Light yellow |
-| 4 | Dark green  | B | Light green  |
-| 5 | Dark blue   | C | Light blue   |
-| 6 | Dark indigo | D | Light indigo |
-| 7 | Dark violet | E | Light violet |
-|   |             | F | White        |
---------------------------------------
+|Color Code| Color                   |
+|----------|-------------------------|
+| 0 | Black (off) |
+| 1 | Dark red    |
+| 2 | Dark orange |
+| 3 | Dark yellow |
+| 4 | Dark green  |
+| 5 | Dark blue   |
+| 6 | Dark indigo |
+| 7 | Dark violet |
+| 8 | Light red   |
+| 9 | Light orange|
+| A | Light yellow|
+| B | Light green |
+| C | Light blue  |
+| D | Light indigo|
+| E | Light violet|
+| F | White       |
+------------------
