@@ -5,9 +5,12 @@ BLiNK is a parsing engine that takes a BLiNK-formatted string and outputs the re
 BLiNK escape sequences
 ----------------------
 
-**@*x*** : \@ controls which LED on the blinkt! should be the target of the following instruction. #0 is "pixel" 0, #1 is pixel 1, etc.
+**@*x*** : \@ controls which LED on the blinkt! should be the target of the following instruction. **@0** is "pixel" 0, **@1** is pixel 1, etc.
+
 **#*x*** : \# controls the color to draw with. See Color Table below.
+
 **!**: \! output the sequence to the blinkt!.
+
 
 Color Table
 ------------
