@@ -9,4 +9,5 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) {
     BLiNK.stringParser(message);
+    console.log(message.toString());
 });
