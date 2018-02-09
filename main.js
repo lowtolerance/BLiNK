@@ -10,5 +10,4 @@ client.on('connect', function () {
 
 client.on('message', function (topic, message) {
     BLiNK.stringParser(message);
-    client.end()
 });
