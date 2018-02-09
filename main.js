@@ -1,5 +1,13 @@
-var convert = require('color-convert'),
-    Blinkt = require('node-blinkt/Blinkt'),
-    BLiNK = require('BLiNK');
+var BLiNK = require('BLiNK'),
+    mqtt = require('mqtt')
 
-BLiNK.stringParser('@0#0!@1#1!@2#2!@3#3!@4#4!@5#5!@6#6!@7#7!');
+var client = mqtt.connect('127.0.0.1');
+
+client.on('connect', function () {
+    client.publish('ticker', '@0#0!@1#1!@2#2!@3#3!@4#4!@5#5!@6#6!@7#7!');
+});
+
+client.on('message', function (topic, message) {
+    BLiNK.stringParser(message);
+    client.end()
+});
